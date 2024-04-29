@@ -18,13 +18,13 @@ import {
 export default function RefresherProgram() {
     return (
         <section>
-            <div className="pt-12 px-60">
-                <h1 className="py-10 text-5xl font-medium">
+            <div className="px-10 md:pt-12 md:px-60">
+                <h1 className="py-5 md:py-10 text-xl md:text-5xl md:font-medium">
                     Our Driving Refresher Program
                 </h1>
 
-                <div className="flex justify-center gap-12">
-                    <Card className="w-1/2 shadow-lg">
+                <div className="grid grid-cols-1 gap-6 md:mt-8 md:grid-cols-3">
+                    <Card className="shadow-lg">
                         <CardHeader className="relative h-60">
                             <Image
                                 className="rounded-t-lg"
@@ -48,7 +48,7 @@ export default function RefresherProgram() {
                         </CardContent>
                     </Card>
 
-                    <Card className="w-1/2 shadow-lg">
+                    <Card className="shadow-lg">
                         <CardHeader className="relative h-60">
                             <Image
                                 className="rounded-t-lg"
@@ -71,7 +71,7 @@ export default function RefresherProgram() {
                         </CardContent>
                     </Card>
 
-                    <Card className="w-1/2 shadow-lg">
+                    <Card className="shadow-lg">
                         <CardHeader className="relative h-60">
                             <Image
                                 className="rounded-t-lg"
@@ -95,7 +95,7 @@ export default function RefresherProgram() {
                     </Card>
                 </div>
 
-                <div className="py-10 text-xl">
+                <div className="py-10 text-sm font-light md:text-xl md:font-medium">
                     <p>
                         Street Smart's driving refresher program focuses on what
                         you REALLY need: practical skills for everyday driving.
@@ -116,29 +116,29 @@ export default function RefresherProgram() {
                         road
                     </p>
                     <br />
-                    <p className="border-b-4 border-orange-600 max-w-fit">
+                    <p className="max-sm:underline max-sm:decoration-orange-600 max-sm:decoration-2 md:border-b-4 border-orange-600 max-w-fit">
                         Street Smart: Your partner to smooth sailing on the
                         streets.
                     </p>
                 </div>
             </div>
 
-            <div className="py-10 px-60 bg-orange-600 text-white">
-                <h1 className="py-5 text-5xl font-medium">
+            <div className="px-10 py-10 md:px-60 bg-orange-600 text-white">
+                <h1 className="md:py-5 text-xl md:text-5xl md:font-medium">
                     Cruise the Roads with Ease
                 </h1>
-                <h1 className="py-5 text-4xl font-bold">
+                <h1 className="py-5 text-2xl md:text-4xl font-bold">
                     No worries, it gets easier after the first try or two
                 </h1>
-                <p className="text-xl font-medium w-4/5">
+                <p className="text-sm md:text-xl md:font-medium md:w-4/5">
                     Take control of your learning. Your driving mentor and coach
                     will tailor the lessons to fit your needs and build your
                     confidence behind the wheel.
                 </p>
 
-                <div className="flex justify-center py-7 gap-12">
-                    <Card className="w-1/2 shadow-lg">
-                        <CardHeader className="relative h-60">
+                <div className="grid grid-cols-1 gap-6 py-7 md:mt-8 md:grid-cols-3">
+                    <Card className="shadow-lg">
+                        <CardHeader className="relative h-40 md:h-60">
                             <Image
                                 className="rounded-t-lg"
                                 src={car}
@@ -160,8 +160,8 @@ export default function RefresherProgram() {
                         </CardContent>
                     </Card>
 
-                    <Card className="w-1/2 shadow-lg">
-                        <CardHeader className="relative h-60">
+                    <Card className="shadow-lg">
+                        <CardHeader className="relative h-40 md:h-60">
                             <Image
                                 className="rounded-t-lg"
                                 src={womenInCar2}
@@ -183,8 +183,8 @@ export default function RefresherProgram() {
                         </CardContent>
                     </Card>
 
-                    <Card className="w-1/2 shadow-lg">
-                        <CardHeader className="relative h-60">
+                    <Card className="shadow-lg">
+                        <CardHeader className="relative h-40 md:h-60">
                             <Image
                                 className="rounded-t-lg"
                                 src={womenInCar3}

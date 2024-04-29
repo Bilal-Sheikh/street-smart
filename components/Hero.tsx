@@ -60,14 +60,14 @@ export default function Hero() {
                     But think bigger! Why risk the safety of yourself and your
                     family just to avoid a refresher course?
                 </p>
-                <p className="py-8 text-xl font-medium">
+                <p className="py-8 text-sm font-light md:text-xl md:font-medium">
                     Street Smart's Driving Refresher Program is here to get you
                     cruising confidently again. With practice and guided
                     instructions, you'll be back to enjoying the freedom of the
                     road in no time. Remember, our cars are our ticket to~
                     anywhere.
                 </p>
-                <p className="text-xl font-medium">
+                <p className="text-sm font-light md:text-xl md:font-medium">
                     Take control and sign up for our Driving Refresher Program
                     today.
                 </p>
