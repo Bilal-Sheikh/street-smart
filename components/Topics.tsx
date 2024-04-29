@@ -9,26 +9,26 @@ import {
 export default function Topics() {
     return (
         <section>
-            <div className="pt-12 px-60">
-                <h1 className="py-5 text-5xl font-medium text-gray-600">
+            <div className="pt-12 px-10 md:px-60">
+                <h1 className="md:py-5 text-2xl md:text-5xl font-medium text-gray-600">
                     Pick a <span className="text-orange-600">Problem</span> area
                 </h1>
-                <p className="text-xl font-medium text-gray-600">
+                <p className="max-sm:py-5 text-sm font-light md:text-xl md:font-medium text-gray-600">
                     To achieve your driving goals, prepare for your driving
                     refresher with our curated topics. Choose the areas you need
                     to focus on and hit the road with confidence.
                 </p>
-                <h5 className="py-5 text-xl font-medium text-gray-600">
+                <h5 className="md:py-5 text-sm font-light md:text-xl md:font-medium text-gray-600">
                     Topics You Will Learn:
                 </h5>
 
                 <Accordion type="multiple">
                     <AccordionItem value="topic-1" className="py-3 rounded-2xl">
-                        <AccordionTrigger className="py-5 px-5 text-orange-600 text-2xl font-semibold">
+                        <AccordionTrigger className="text-start px-2 md:py-5 md:px-5 text-sm md:text-2xl text-orange-600 font-semibold">
                             Topic 1: Pre-Drive Checklist and Essential Skills?
                         </AccordionTrigger>
-                        <AccordionContent className="px-10">
-                            <ul className="px-5 list-disc text-xl text-gray-600">
+                        <AccordionContent className="px-2 md:px-10">
+                            <ul className="px-5 list-disc md:text-xl text-gray-600">
                                 <li className="py-3">
                                     <span className="font-bold">
                                         Gear Up for Safe Driving:
@@ -55,8 +55,9 @@ export default function Topics() {
                                     <span className="font-bold">
                                         Minimize Blind Spots, Maximize Safety:
                                     </span>{' '}
-                                    Properly adjust your side mirrors to eliminate
-                                    blind spots and see what's behind you.
+                                    Properly adjust your side mirrors to
+                                    eliminate blind spots and see what's behind
+                                    you.
                                 </li>
                                 <li className="py-3">
                                     <span className="font-bold">
@@ -86,11 +87,11 @@ export default function Topics() {
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="topic-2" className="py-3 rounded-2xl">
-                        <AccordionTrigger className="py-5 px-5 text-orange-600 text-2xl font-semibold">
+                        <AccordionTrigger className="text-start px-2 md:py-5 md:px-5 text-sm md:text-2xl text-orange-600 font-semibold">
                             Topic 2: Etiquette on the Road
                         </AccordionTrigger>
-                        <AccordionContent className="px-10">
-                            <ul className="px-5 list-disc text-xl text-gray-600">
+                        <AccordionContent className="px-2 md:px-10">
+                            <ul className="px-5 list-disc md:text-xl text-gray-600">
                                 <li className="py-3">
                                     <span className="font-bold">
                                         Know the Basics:
@@ -192,11 +193,11 @@ export default function Topics() {
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="topic-3" className="py-3 rounded-2xl">
-                        <AccordionTrigger className="py-5 px-5 text-orange-600 text-2xl font-semibold">
+                        <AccordionTrigger className="text-start px-2 md:py-5 md:px-5 text-sm md:text-2xl text-orange-600 font-semibold">
                             Topic 3: Drive with Control on Expressways
                         </AccordionTrigger>
-                        <AccordionContent className="px-10">
-                            <ul className="px-5 list-disc text-xl text-gray-600">
+                        <AccordionContent className="px-2 md:px-10">
+                            <ul className="px-5 list-disc md:text-xl text-gray-600">
                                 <li className="py-3">
                                     <span className="font-bold">
                                         High-Speed Driving:
@@ -250,11 +251,11 @@ export default function Topics() {
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="topic-4" className="py-3 rounded-2xl">
-                        <AccordionTrigger className="py-5 px-5 text-orange-600 text-2xl font-semibold">
+                        <AccordionTrigger className="text-start px-2 md:py-5 md:px-5 text-sm md:text-2xl text-orange-600 font-semibold">
                             Topic 4: Your Guide to Confident Parking
                         </AccordionTrigger>
-                        <AccordionContent className="px-10">
-                            <ul className="px-5 list-disc text-xl text-gray-600">
+                        <AccordionContent className="px-2 md:px-10">
+                            <ul className="px-5 list-disc md:text-xl text-gray-600">
                                 <li className="py-3">
                                     <span className="font-bold">
                                         Stress-free Parking:
@@ -320,11 +321,11 @@ export default function Topics() {
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="topic-5" className="py-3 rounded-2xl">
-                        <AccordionTrigger className="py-5 px-5 text-orange-600 text-2xl font-semibold">
+                        <AccordionTrigger className="text-start px-2 md:py-5 md:px-5 text-sm md:text-2xl text-orange-600 font-semibold">
                             Topic 5: Your Guide to Roundabouts
                         </AccordionTrigger>
-                        <AccordionContent className="px-10">
-                            <ul className="px-5 list-disc text-xl text-gray-600">
+                        <AccordionContent className="px-2 md:px-10">
+                            <ul className="px-5 list-disc md:text-xl text-gray-600">
                                 <li className="py-3">
                                     <span className="font-bold">
                                         Yield Before You Enter:
@@ -376,11 +377,11 @@ export default function Topics() {
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="topic-6" className="py-3 rounded-2xl">
-                        <AccordionTrigger className="py-5 px-5 text-orange-600 text-2xl font-semibold">
+                        <AccordionTrigger className="text-start px-2 md:py-5 md:px-5 text-sm md:text-2xl text-orange-600 font-semibold">
                             Topic 6: Improve Your Driving Experience
                         </AccordionTrigger>
-                        <AccordionContent className="px-10">
-                            <ul className="px-5 list-disc text-xl text-gray-600">
+                        <AccordionContent className="px-2 md:px-10">
+                            <ul className="px-5 list-disc md:text-xl text-gray-600">
                                 <li className="py-3">
                                     <span className="font-bold">
                                         Minimize Costly Mistakes:
