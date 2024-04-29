@@ -4,14 +4,14 @@ import React from 'react';
 export default function Pricing() {
     return (
         <section className="bg-gray-800">
-            <div className="py-12 px-60">
-                <h1 className="py-5 text-5xl font-medium text-white">
+            <div className="py-6 px-10 md:py-12 md:px-60">
+                <h1 className="md:py-5 text-2xl md:text-5xl font-medium text-white">
                     Are You Ready to Get Started?
                 </h1>
-                <h1 className="py-6 text-4xl font-bold text-white">
+                <h1 className="py-6 text-2xl md:text-4xl font-bold text-white">
                     Customized Just for You
                 </h1>
-                <p className="text-xl font-medium text-white">
+                <p className="text-sm md:text-xl md:font-medium text-white">
                     Choose your ideal plan, pick a convenient date & time, and
                     secure your spot with a quick payment. Simple and efficient.
                 </p>
@@ -35,7 +35,10 @@ export function PricingCards() {
                         </div>
                         <div className="mt-4 text-center text-zinc-600 dark:text-zinc-400">
                             <span>
-                                200 Minutes Bundle (2 x 100 Minutes Session)
+                                200 Minutes Bundle{' '}
+                                <span className="max-sm:whitespace-nowrap">
+                                    (2 x 100 Minutes Session)
+                                </span>
                             </span>
                         </div>
                         <div className="ml-2 mt-4 text-xl font-bold text-start">
@@ -74,7 +77,10 @@ export function PricingCards() {
                         </div>
                         <div className="mt-4 text-center text-zinc-600 dark:text-zinc-400">
                             <span>
-                                600 Minutes Bundle (6 x 100 Minutes Session)
+                                600 Minutes Bundle{' '}
+                                <span className="max-sm:whitespace-nowrap">
+                                    (6 x 100 Minutes Session)
+                                </span>
                             </span>
                         </div>
                         <div className="ml-2 mt-4 text-xl font-bold text-start">
@@ -116,7 +122,10 @@ export function PricingCards() {
                         </div>
                         <div className="mt-4 text-center text-zinc-600 dark:text-zinc-400">
                             <span>
-                                400 Minutes Bundle (4 x 100 Minutes Session)
+                                400 Minutes Bundle{' '}
+                                <span className="max-sm:whitespace-nowrap">
+                                    (4 x 100 Minutes Session)
+                                </span>
                             </span>
                         </div>
                         <div className="ml-2 mt-4 text-xl font-bold text-start">

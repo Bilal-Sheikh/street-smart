@@ -15,7 +15,7 @@ export default function Home() {
                 <Hero />
                 <RefresherProgram />
                 <Topics />
-                {/* <Pricing /> */}
+                <Pricing />
                 {/* <FAQ /> */}
                 {/* <Footer /> */}
             </div>
