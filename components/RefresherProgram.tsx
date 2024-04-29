@@ -25,7 +25,7 @@ export default function RefresherProgram() {
 
                 <div className="grid grid-cols-1 gap-6 md:mt-8 md:grid-cols-3">
                     <Card className="shadow-lg">
-                        <CardHeader className="relative h-60">
+                        <CardHeader className="relative h-40 md:h-60">
                             <Image
                                 className="rounded-t-lg"
                                 src={expressway}
@@ -49,7 +49,7 @@ export default function RefresherProgram() {
                     </Card>
 
                     <Card className="shadow-lg">
-                        <CardHeader className="relative h-60">
+                        <CardHeader className="relative h-40 md:h-60">
                             <Image
                                 className="rounded-t-lg"
                                 src={womenInCar}
@@ -72,7 +72,7 @@ export default function RefresherProgram() {
                     </Card>
 
                     <Card className="shadow-lg">
-                        <CardHeader className="relative h-60">
+                        <CardHeader className="relative h-40 md:h-60">
                             <Image
                                 className="rounded-t-lg"
                                 src={tunnel}

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import {
     Sheet,
     SheetContent,
-    SheetDescription,
+    SheetClose,
     SheetHeader,
     SheetTitle,
     SheetTrigger,
@@ -14,7 +14,7 @@ import { Menu } from 'lucide-react';
 
 export default function Navbar() {
     return (
-        <div className="top-0 flex justify-between items-center py-10 lg:py-16 lg:px-32">
+        <div className="sticky top-0 flex justify-between items-center py-5 lg:py-11 lg:px-32 bg-white z-50">
             <div className="flex items-center">
                 <div className="px-5 block lg:hidden">
                     <Sheet>
@@ -37,13 +37,22 @@ export default function Navbar() {
                                 </SheetTitle>
                             </SheetHeader>
                             <hr />
+
                             <div className="grid gap-4 py-7">
                                 <Link href={'/'}>Home</Link>
-                                <Link href={'/'}>Pricing</Link>
+                                <SheetClose asChild>
+                                    <Link href={'#pricing'}>Pricing</Link>
+                                </SheetClose>
                                 <Link href={'/'}>Blog</Link>
                                 <Link href={'/'}>News</Link>
-                                <Link href={'/'}>FAQ</Link>
-                                <Link href={'/'}>Contact US</Link>
+                                <SheetClose asChild>
+                                    <Link href={'#faq'} scroll={true}>
+                                        FAQ
+                                    </Link>
+                                </SheetClose>
+                                <SheetClose asChild>
+                                    <Link href={'#contact'}>Contact US</Link>
+                                </SheetClose>
                             </div>
                         </SheetContent>
                     </Sheet>
