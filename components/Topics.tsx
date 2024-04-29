@@ -24,7 +24,7 @@ export default function Topics() {
 
                 <Accordion type="multiple">
                     <AccordionItem value="topic-1" className="py-3 rounded-2xl">
-                        <AccordionTrigger className="text-start px-2 md:py-5 md:px-5 text-sm md:text-2xl text-orange-600 font-semibold">
+                        <AccordionTrigger className="text-start md:py-5 md:px-5 text-base md:text-2xl text-orange-600 font-semibold">
                             Topic 1: Pre-Drive Checklist and Essential Skills?
                         </AccordionTrigger>
                         <AccordionContent className="px-2 md:px-10">
@@ -87,7 +87,7 @@ export default function Topics() {
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="topic-2" className="py-3 rounded-2xl">
-                        <AccordionTrigger className="text-start px-2 md:py-5 md:px-5 text-sm md:text-2xl text-orange-600 font-semibold">
+                        <AccordionTrigger className="text-start md:py-5 md:px-5 text-base md:text-2xl text-orange-600 font-semibold">
                             Topic 2: Etiquette on the Road
                         </AccordionTrigger>
                         <AccordionContent className="px-2 md:px-10">
@@ -193,7 +193,7 @@ export default function Topics() {
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="topic-3" className="py-3 rounded-2xl">
-                        <AccordionTrigger className="text-start px-2 md:py-5 md:px-5 text-sm md:text-2xl text-orange-600 font-semibold">
+                        <AccordionTrigger className="text-start md:py-5 md:px-5 text-base md:text-2xl text-orange-600 font-semibold">
                             Topic 3: Drive with Control on Expressways
                         </AccordionTrigger>
                         <AccordionContent className="px-2 md:px-10">
@@ -251,7 +251,7 @@ export default function Topics() {
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="topic-4" className="py-3 rounded-2xl">
-                        <AccordionTrigger className="text-start px-2 md:py-5 md:px-5 text-sm md:text-2xl text-orange-600 font-semibold">
+                        <AccordionTrigger className="text-start md:py-5 md:px-5 text-base md:text-2xl text-orange-600 font-semibold">
                             Topic 4: Your Guide to Confident Parking
                         </AccordionTrigger>
                         <AccordionContent className="px-2 md:px-10">
@@ -321,7 +321,7 @@ export default function Topics() {
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="topic-5" className="py-3 rounded-2xl">
-                        <AccordionTrigger className="text-start px-2 md:py-5 md:px-5 text-sm md:text-2xl text-orange-600 font-semibold">
+                        <AccordionTrigger className="text-start md:py-5 md:px-5 text-base md:text-2xl text-orange-600 font-semibold">
                             Topic 5: Your Guide to Roundabouts
                         </AccordionTrigger>
                         <AccordionContent className="px-2 md:px-10">
@@ -377,7 +377,7 @@ export default function Topics() {
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="topic-6" className="py-3 rounded-2xl">
-                        <AccordionTrigger className="text-start px-2 md:py-5 md:px-5 text-sm md:text-2xl text-orange-600 font-semibold">
+                        <AccordionTrigger className="text-start md:py-5 md:px-5 text-base md:text-2xl text-orange-600 font-semibold">
                             Topic 6: Improve Your Driving Experience
                         </AccordionTrigger>
                         <AccordionContent className="px-2 md:px-10">

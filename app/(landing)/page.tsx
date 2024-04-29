@@ -16,7 +16,7 @@ export default function Home() {
                 <RefresherProgram />
                 <Topics />
                 <Pricing />
-                {/* <FAQ /> */}
+                <FAQ />
                 {/* <Footer /> */}
             </div>
         </main>
