@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Pricing() {
     return (
-        <section className="bg-gray-800">
+        <section id='pricing' className="bg-gray-800">
             <div className="py-6 px-10 md:py-12 md:px-60">
                 <h1 className="md:py-5 text-2xl md:text-5xl font-medium text-white">
                     Are You Ready to Get Started?

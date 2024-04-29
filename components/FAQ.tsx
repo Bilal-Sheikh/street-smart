@@ -8,7 +8,7 @@ import {
 
 export default function FAQ() {
     return (
-        <section>
+        <section id='faq'>
             <div className="px-10 pt-6 md:pt-12 md:px-60">
                 <h1 className="md:py-5 text-2xl md:text-4xl font-bold">
                     Frequently Asked

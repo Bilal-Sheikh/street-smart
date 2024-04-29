@@ -60,7 +60,7 @@ export default function Navbar() {
                 <Link className="hover:underline" href={'/'}>
                     Home
                 </Link>
-                <Link className="hover:underline" href={'/'}>
+                <Link className="hover:underline" href={'#pricing'}>
                     Pricing
                 </Link>
                 <Link className="hover:underline" href={'/'}>
@@ -69,10 +69,10 @@ export default function Navbar() {
                 <Link className="hover:underline" href={'/'}>
                     News
                 </Link>
-                <Link className="hover:underline" href={'/'}>
+                <Link className="hover:underline" href={'#faq'}>
                     FAQ
                 </Link>
-                <Link className="hover:underline" href={'/'}>
+                <Link className="hover:underline" href={'#contact'}>
                     Contact US
                 </Link>
             </div>
