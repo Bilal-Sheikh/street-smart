@@ -24,14 +24,16 @@ export default function Navbar() {
                         <SheetContent side={'left'}>
                             <SheetHeader>
                                 <SheetTitle>
-                                    <Image
-                                        className="lg:w-full lg:h-auto"
-                                        src={logo}
-                                        width={100}
-                                        height={100}
-                                        sizes=""
-                                        alt="Street Smart"
-                                    />
+                                    <Link href={'/'}>
+                                        <Image
+                                            className="lg:w-full lg:h-auto"
+                                            src={logo}
+                                            width={100}
+                                            height={100}
+                                            sizes=""
+                                            alt="Street Smart"
+                                        />
+                                    </Link>
                                 </SheetTitle>
                             </SheetHeader>
                             <hr />
@@ -46,14 +48,16 @@ export default function Navbar() {
                         </SheetContent>
                     </Sheet>
                 </div>
-                <Image
-                    className="lg:w-full lg:h-auto"
-                    src={logo}
-                    width={100}
-                    height={100}
-                    sizes=""
-                    alt="Street Smart"
-                />
+                <Link href={'/'}>
+                    <Image
+                        className="lg:w-full lg:h-auto"
+                        src={logo}
+                        width={100}
+                        height={100}
+                        sizes=""
+                        alt="Street Smart"
+                    />
+                </Link>
             </div>
 
             <div className="hidden lg:block text-gray-600 [&>a]:px-6 text-xl font-medium">
