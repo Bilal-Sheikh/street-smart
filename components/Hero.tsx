@@ -52,7 +52,7 @@ export default function Hero() {
                         Feeling Anxious Behind the Wheel?
                     </h3>
                     <h1 className="py-6 text-2xl lg:text-4xl font-bold">
-                        No worries, it gets easier after the first try or two
+                        No worries, it gets easier after the first try or two!
                     </h1>
                     <p className="text-sm font-light lg:font-medium lg:text-xl">
                         It's normal to have jitters, especially after just
@@ -67,7 +67,7 @@ export default function Hero() {
                         you cruising confidently again. With practice and guided
                         instructions, you'll be back to enjoying the freedom of
                         the road in no time. Remember, our cars are our ticket
-                        to~ anywhere.
+                        to anywhere.
                     </p>
                     <p className="text-sm font-light lg:text-xl lg:font-medium">
                         Take control and sign up for our Driving Refresher

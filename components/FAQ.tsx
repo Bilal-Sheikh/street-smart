@@ -33,7 +33,7 @@ export default function FAQ() {
                     </AccordionItem>
                     <AccordionItem value="ques-2" className="py-3 rounded-2xl">
                         <AccordionTrigger className="text-start lg:py-5 lg:px-5 text-base lg:text-2xl text-gray-600 font-semibold">
-                            Topic 2: Etiquette on the Road
+                            What are the intended results of this program?
                         </AccordionTrigger>
                         <AccordionContent className="lg:px-10">
                             <p className="text-base lg:text-xl text-gray-600">
