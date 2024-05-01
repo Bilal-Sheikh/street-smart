@@ -18,14 +18,14 @@ import {
 export default function RefresherProgram() {
     return (
         <section>
-            <div className="px-10 md:pt-12 md:px-60">
-                <h1 className="py-5 md:py-10 text-xl md:text-5xl md:font-medium">
+            <div className="px-10 lg:px-20 lg:mx-auto lg:max-w-screen-2xl">
+                <h1 className="py-5 lg:py-10 text-xl lg:text-4xl lg:font-medium">
                     Our Driving Refresher Program
                 </h1>
 
-                <div className="grid grid-cols-1 gap-6 md:mt-8 md:grid-cols-3">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                     <Card className="shadow-lg">
-                        <CardHeader className="relative h-40 md:h-60">
+                        <CardHeader className="relative h-40 lg:h-60">
                             <Image
                                 className="rounded-t-lg"
                                 src={expressway}
@@ -49,7 +49,7 @@ export default function RefresherProgram() {
                     </Card>
 
                     <Card className="shadow-lg">
-                        <CardHeader className="relative h-40 md:h-60">
+                        <CardHeader className="relative h-40 lg:h-60">
                             <Image
                                 className="rounded-t-lg"
                                 src={womenInCar}
@@ -72,7 +72,7 @@ export default function RefresherProgram() {
                     </Card>
 
                     <Card className="shadow-lg">
-                        <CardHeader className="relative h-40 md:h-60">
+                        <CardHeader className="relative h-40 lg:h-60">
                             <Image
                                 className="rounded-t-lg"
                                 src={tunnel}
@@ -95,7 +95,7 @@ export default function RefresherProgram() {
                     </Card>
                 </div>
 
-                <div className="py-10 text-sm font-light md:text-xl md:font-medium">
+                <div className="py-10 text-sm font-light lg:text-xl lg:font-medium">
                     <p>
                         Street Smart's driving refresher program focuses on what
                         you REALLY need: practical skills for everyday driving.
@@ -116,95 +116,97 @@ export default function RefresherProgram() {
                         road
                     </p>
                     <br />
-                    <p className="max-sm:underline max-sm:decoration-orange-600 max-sm:decoration-2 md:border-b-4 border-orange-600 max-w-fit">
+                    <p className="max-sm:underline max-sm:decoration-orange-600 max-sm:decoration-2 lg:border-b-4 border-orange-600 max-w-fit">
                         Street Smart: Your partner to smooth sailing on the
                         streets.
                     </p>
                 </div>
             </div>
 
-            <div className="px-10 py-10 md:px-60 bg-orange-600 text-white">
-                <h1 className="md:py-5 text-xl md:text-5xl md:font-medium">
-                    Cruise the Roads with Ease
-                </h1>
-                <h1 className="py-5 text-2xl md:text-4xl font-bold">
-                    No worries, it gets easier after the first try or two
-                </h1>
-                <p className="text-sm md:text-xl md:font-medium md:w-4/5">
-                    Take control of your learning. Your driving mentor and coach
-                    will tailor the lessons to fit your needs and build your
-                    confidence behind the wheel.
-                </p>
+            <div className="bg-orange-600 text-white">
+                <div className="px-10 py-10 lg:px-20 lg:mx-auto lg:max-w-screen-2xl">
+                    <h1 className="text-xl lg:text-4xl lg:font-medium">
+                        Cruise the Roads with Ease
+                    </h1>
+                    <h1 className="py-5 text-2xl lg:text-4xl font-bold">
+                        Take your time and learn at your own pace
+                    </h1>
+                    <p className="text-sm lg:text-xl lg:font-medium lg:w-4/5">
+                        Take control of your learning. Your driving mentor and
+                        coach will tailor the lessons to fit your needs and
+                        build your confidence behind the wheel.
+                    </p>
 
-                <div className="grid grid-cols-1 gap-6 py-7 md:mt-8 md:grid-cols-3">
-                    <Card className="shadow-lg">
-                        <CardHeader className="relative h-40 md:h-60">
-                            <Image
-                                className="rounded-t-lg"
-                                src={car}
-                                fill
-                                objectFit="fill"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                alt="The Real Deal | StreetSmart"
-                            />
-                        </CardHeader>
-                        <CardContent>
-                            <CardTitle className="py-5 text-orange-600">
-                                Curated Program
-                            </CardTitle>
-                            <CardDescription className="text-base">
-                                Get back on the road with confidence. Our
-                                structured program covers everything new & old
-                                drivers need. Learn the ropes, fast.
-                            </CardDescription>
-                        </CardContent>
-                    </Card>
+                    <div className="grid grid-cols-1 gap-6 py-7 lg:mt-8 lg:grid-cols-3">
+                        <Card className="shadow-lg">
+                            <CardHeader className="relative h-40 lg:h-60">
+                                <Image
+                                    className="rounded-t-lg"
+                                    src={car}
+                                    fill
+                                    objectFit="fill"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    alt="The Real Deal | StreetSmart"
+                                />
+                            </CardHeader>
+                            <CardContent>
+                                <CardTitle className="py-5 text-orange-600">
+                                    Curated Program
+                                </CardTitle>
+                                <CardDescription className="text-base">
+                                    Get back on the road with confidence. Our
+                                    structured program covers everything new &
+                                    old drivers need. Learn the ropes, fast.
+                                </CardDescription>
+                            </CardContent>
+                        </Card>
 
-                    <Card className="shadow-lg">
-                        <CardHeader className="relative h-40 md:h-60">
-                            <Image
-                                className="rounded-t-lg"
-                                src={womenInCar2}
-                                fill
-                                objectFit="fill"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                alt="The Real Deal | StreetSmart"
-                            />
-                        </CardHeader>
-                        <CardContent>
-                            <CardTitle className="py-5 text-orange-600">
-                                Less Hassle
-                            </CardTitle>
-                            <CardDescription className="text-base">
-                                No registration fees, other hidden costs &
-                                endless waiting time. Pick a plan, get started
-                                now.
-                            </CardDescription>
-                        </CardContent>
-                    </Card>
+                        <Card className="shadow-lg">
+                            <CardHeader className="relative h-40 lg:h-60">
+                                <Image
+                                    className="rounded-t-lg"
+                                    src={womenInCar2}
+                                    fill
+                                    objectFit="fill"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    alt="The Real Deal | StreetSmart"
+                                />
+                            </CardHeader>
+                            <CardContent>
+                                <CardTitle className="py-5 text-orange-600">
+                                    Less Hassle
+                                </CardTitle>
+                                <CardDescription className="text-base">
+                                    No registration fees, other hidden costs &
+                                    endless waiting time. Pick a plan, get
+                                    started now.
+                                </CardDescription>
+                            </CardContent>
+                        </Card>
 
-                    <Card className="shadow-lg">
-                        <CardHeader className="relative h-40 md:h-60">
-                            <Image
-                                className="rounded-t-lg"
-                                src={womenInCar3}
-                                fill
-                                objectFit="fill"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                alt="The Real Deal | StreetSmart"
-                            />
-                        </CardHeader>
-                        <CardContent>
-                            <CardTitle className="py-5 text-orange-600">
-                                Your Time, Your Place
-                            </CardTitle>
-                            <CardDescription className="text-base">
-                                Learn without the hassle. You pick the perfect
-                                time and spot for each lesson. Learn from the
-                                comfort of wherever you choose.
-                            </CardDescription>
-                        </CardContent>
-                    </Card>
+                        <Card className="shadow-lg">
+                            <CardHeader className="relative h-40 lg:h-60">
+                                <Image
+                                    className="rounded-t-lg"
+                                    src={womenInCar3}
+                                    fill
+                                    objectFit="fill"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    alt="The Real Deal | StreetSmart"
+                                />
+                            </CardHeader>
+                            <CardContent>
+                                <CardTitle className="py-5 text-orange-600">
+                                    Your Time, Your Place
+                                </CardTitle>
+                                <CardDescription className="text-base">
+                                    Learn without the hassle. You pick the
+                                    perfect time and spot for each lesson. Learn
+                                    from the comfort of wherever you choose.
+                                </CardDescription>
+                            </CardContent>
+                        </Card>
+                    </div>
                 </div>
             </div>
         </section>

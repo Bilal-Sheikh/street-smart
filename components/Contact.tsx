@@ -54,6 +54,7 @@ export default function Contact() {
             lastname: '',
             email: '',
             note: '',
+            mobile: '',
         },
     });
 
@@ -63,23 +64,28 @@ export default function Contact() {
 
     return (
         <section id="contact">
-            <div className="px-10 py-12 md:px-60">
-                <h1 className="py-5 text-2xl md:text-5xl font-medium text-gray-600">
+            <div className="px-10 py-12 lg:px-20 lg:mx-auto lg:max-w-screen-2xl">
+                <h1 className="py-5 lg:pb-10 text-2xl lg:text-4xl font-medium text-gray-600">
                     Contact Us
                 </h1>
 
                 <Form {...form}>
                     <form
                         onSubmit={form.handleSubmit(onSubmit)}
+                        onReset={() => {
+                            form.reset();
+                        }}
                         className="space-y-8"
                     >
-                        <div className="grid md:grid-cols-2 gap-7">
+                        <div className="grid lg:grid-cols-2 gap-7">
                             <FormField
                                 control={form.control}
                                 name="firstname"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel>Firstname</FormLabel>
+                                        <FormLabel className="text-lg">
+                                            Firstname
+                                        </FormLabel>
                                         <FormControl>
                                             <Input
                                                 placeholder="John"
@@ -95,7 +101,9 @@ export default function Contact() {
                                 name="lastname"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel>Lastname</FormLabel>
+                                        <FormLabel className="text-lg">
+                                            Lastname
+                                        </FormLabel>
                                         <FormControl>
                                             <Input
                                                 placeholder="Doe"
@@ -111,7 +119,9 @@ export default function Contact() {
                                 name="mobile"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel>Mobile Number</FormLabel>
+                                        <FormLabel className="text-lg">
+                                            Mobile Number
+                                        </FormLabel>
                                         <FormControl>
                                             <Input
                                                 placeholder="+00 987 654 321"
@@ -127,7 +137,9 @@ export default function Contact() {
                                 name="email"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel>Email Address</FormLabel>
+                                        <FormLabel className="text-lg">
+                                            Email Address
+                                        </FormLabel>
                                         <FormControl>
                                             <Input
                                                 placeholder="john_doe@example.com"
@@ -143,7 +155,7 @@ export default function Contact() {
                                 name="plan"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel>
+                                        <FormLabel className="text-lg">
                                             I would like to sign up for the
                                             following Plan
                                         </FormLabel>
@@ -176,7 +188,7 @@ export default function Contact() {
                                 name="licence"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel>
+                                        <FormLabel className="text-lg">
                                             I have a valid driving licence
                                         </FormLabel>
                                         <FormControl>
@@ -207,7 +219,7 @@ export default function Contact() {
                             name="note"
                             render={({ field }) => (
                                 <FormItem>
-                                    <FormLabel>
+                                    <FormLabel className="text-lg">
                                         Any particular areas you want to focus
                                         on
                                     </FormLabel>
@@ -221,11 +233,15 @@ export default function Contact() {
                                 </FormItem>
                             )}
                         />
-                        <div className="flex justify-center">
+                        <div className="flex justify-end gap-5">
                             <Button
-                                type="submit"
-                                className="max-sm:w-full md:w-1/2"
+                                variant={'destructive'}
+                                type="reset"
+                                className="w-52"
                             >
+                                Reset
+                            </Button>
+                            <Button type="submit" className="w-52">
                                 Submit
                             </Button>
                         </div>

@@ -14,7 +14,7 @@ import { Menu } from 'lucide-react';
 
 export default function Navbar() {
     return (
-        <div className="sticky top-0 flex justify-between items-center py-5 lg:py-11 lg:px-32 bg-white z-50">
+        <div className="sticky top-0 flex justify-between items-center py-5 lg:py-11 lg:px-16 bg-white z-50">
             <div className="flex items-center">
                 <div className="px-5 block lg:hidden">
                     <Sheet>

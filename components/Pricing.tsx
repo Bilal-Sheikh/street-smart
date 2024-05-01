@@ -3,15 +3,15 @@ import React from 'react';
 
 export default function Pricing() {
     return (
-        <section id='pricing' className="bg-gray-800">
-            <div className="py-6 px-10 md:py-12 md:px-60">
-                <h1 className="md:py-5 text-2xl md:text-5xl font-medium text-white">
+        <section id="pricing" className="bg-gray-800">
+            <div className="py-6 px-10 lg:py-12 lg:px-20 lg:mx-auto lg:max-w-screen-2xl">
+                <h1 className="lg:py-5 text-2xl lg:text-4xl font-medium text-white">
                     Are You Ready to Get Started?
                 </h1>
-                <h1 className="py-6 text-2xl md:text-4xl font-bold text-white">
+                <h1 className="py-6 text-2xl lg:text-4xl font-bold text-white">
                     Customized Just for You
                 </h1>
-                <p className="text-sm md:text-xl md:font-medium text-white">
+                <p className="text-sm lg:text-xl lg:font-medium text-white">
                     Choose your ideal plan, pick a convenient date & time, and
                     secure your spot with a quick payment. Simple and efficient.
                 </p>
@@ -23,8 +23,8 @@ export default function Pricing() {
 
 export function PricingCards() {
     return (
-        <div className="container px-4 md:px-6">
-            <div className="grid grid-cols-1 gap-6 mt-8 md:grid-cols-3 md:gap-8">
+        <div className="container px-4">
+            <div className="grid grid-cols-1 gap-6 mt-8 lg:grid-cols-3 lg:gap-8">
                 <div className="flex flex-col p-6 bg-white shadow-lg rounded-lg dark:bg-zinc-850 justify-between border border-gray-300">
                     <div>
                         <h3 className="text-2xl font-bold text-center">
