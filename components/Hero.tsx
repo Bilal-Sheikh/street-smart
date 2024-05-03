@@ -5,7 +5,7 @@ import heroImage from '@/public/hero-image.png';
 export default function Hero() {
     return (
         <section>
-            <div className="pt-10 px-5 lg:pt-5 lg:pl-20 lg:mx-auto lg:max-w-screen-2xl lg:flex justify-between items-center">
+            <div className="pt-10 px-5 lg:pt-16 lg:pl-20 lg:mx-auto lg:max-w-screen-2xl lg:flex justify-between items-center">
                 <div className="block lg:hidden">
                     <Image
                         src={heroImage}
