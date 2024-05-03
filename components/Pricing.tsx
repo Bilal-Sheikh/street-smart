@@ -4,14 +4,14 @@ import React from 'react';
 export default function Pricing() {
     return (
         <section id="pricing" className="bg-gray-800">
-            <div className="py-6 px-10 lg:py-12 lg:px-20 lg:mx-auto lg:max-w-screen-2xl">
-                <h1 className="lg:py-5 text-2xl lg:text-4xl font-medium text-white">
+            <div className="py-6 px-10 lg:py-20 lg:px-20 lg:mx-auto lg:max-w-screen-2xl">
+                <h1 className="text-2xl lg:text-3xl font-medium text-white">
                     Are You Ready to Get Started?
                 </h1>
-                <h1 className="py-6 text-2xl lg:text-4xl font-bold text-white">
+                <h1 className="py-6 text-2xl lg:text-3xl font-bold text-white">
                     Customized Just for You
                 </h1>
-                <p className="text-sm lg:text-xl lg:font-medium text-white">
+                <p className="text-base lg:text-xl lg:font-medium text-white">
                     Choose your ideal plan, pick a convenient date & time, and
                     secure your spot with a quick payment. Simple and efficient.
                 </p>
@@ -27,7 +27,7 @@ export function PricingCards() {
             <div className="grid grid-cols-1 gap-6 mt-8 lg:grid-cols-3 lg:gap-8">
                 <div className="flex flex-col p-6 bg-white shadow-lg rounded-lg dark:bg-zinc-850 justify-between border border-gray-300">
                     <div>
-                        <h3 className="text-2xl font-bold text-center">
+                        <h3 className="py-2 mx-auto lg:w-60 text-white text-xl lg:text-2xl font-bold text-center rounded-full bg-gray-400">
                             Try Out
                         </h3>
                         <div className="mt-4 text-center text-zinc-600 dark:text-zinc-400">
@@ -35,10 +35,8 @@ export function PricingCards() {
                         </div>
                         <div className="mt-4 text-center text-zinc-600 dark:text-zinc-400">
                             <span>
-                                200 Minutes Bundle{' '}
-                                <span className="max-sm:whitespace-nowrap">
-                                    (2 x 100 Minutes Session)
-                                </span>
+                                200 Minutes Bundle
+                                <p>(2 x 100 Minutes Session)</p>
                             </span>
                         </div>
                         <div className="ml-2 mt-4 text-xl font-bold text-start">
@@ -53,9 +51,43 @@ export function PricingCards() {
                                 <CheckIcon className="text-white text-xs bg-green-500 rounded-full mr-2 p-1" />
                                 All inclusive (no hidden cost)
                             </li>
+                        </ul>
+                    </div>
+                    <div className="mt-6">
+                        <Button className="w-full">Get Started</Button>
+                    </div>
+                </div>
+
+                <div className="flex flex-col p-6 bg-white shadow-lg rounded-lg dark:bg-zinc-850 justify-between border border-gray-300">
+                    <div>
+                        <h3 className="py-2 mx-auto lg:w-60 text-white text-xl lg:text-2xl font-bold text-center rounded-full bg-gray-400">
+                            Clear Cut
+                        </h3>
+                        <div className="mt-4 text-center text-zinc-600 dark:text-zinc-400">
+                            <span className="text-4xl font-bold">$360</span>
+                        </div>
+                        <div className="mt-4 text-center text-zinc-600 dark:text-zinc-400">
+                            <span>
+                                400 Minutes Bundle
+                                <p>(4 x 100 Minutes Session) - Save 10%</p>
+                            </span>
+                        </div>
+                        <div className="ml-2 mt-4 text-xl font-bold text-start">
+                            <span>What’s Covered</span>
+                        </div>
+                        <ul className="mt-4 space-y-2">
                             <li className="flex items-center">
                                 <CheckIcon className="text-white text-xs bg-green-500 rounded-full mr-2 p-1" />
-                                Street Smart Certification
+                                Car setup & control
+                            </li>
+                            <li className="flex items-center whitespace-pre">
+                                <CheckIcon className="text-white text-xs bg-green-500 rounded-full mr-2 p-1" />
+                                <span className="font-bold">4 topics</span> of
+                                your choice
+                            </li>
+                            <li className="flex items-center">
+                                <CheckIcon className="text-white text-xs bg-green-500 rounded-full mr-2 p-1" />
+                                All inclusive (no hidden cost)
                             </li>
                         </ul>
                     </div>
@@ -69,7 +101,7 @@ export function PricingCards() {
                         Popular
                     </div>
                     <div>
-                        <h3 className="text-2xl font-bold text-center">
+                        <h3 className="py-2 mx-auto lg:w-72 text-white text-xl lg:text-2xl font-bold text-center rounded-full bg-gradient-to-r from-orange-500 to-red-500">
                             Value For Money
                         </h3>
                         <div className="mt-4 text-center text-zinc-600 dark:text-zinc-400">
@@ -77,10 +109,8 @@ export function PricingCards() {
                         </div>
                         <div className="mt-4 text-center text-zinc-600 dark:text-zinc-400">
                             <span>
-                                600 Minutes Bundle{' '}
-                                <span className="max-sm:whitespace-nowrap">
-                                    (6 x 100 Minutes Session)
-                                </span>
+                                600 Minutes Bundle
+                                <p>(6 x 100 Minutes Session) - Save 20%</p>
                             </span>
                         </div>
                         <div className="ml-2 mt-4 text-xl font-bold text-start">
@@ -91,17 +121,16 @@ export function PricingCards() {
                                 <CheckIcon className="text-white text-2xs bg-green-500 rounded-full mr-2 p-1" />
                                 Car setup & control
                             </li>
-                            <li className="flex items-center">
+                            <li className="flex items-center whitespace-pre">
                                 <CheckIcon className="text-white text-xs bg-green-500 rounded-full mr-2 p-1" />
-                                ALL topics covered
+                                <span className="font-bold pr-1">
+                                    ALL topics
+                                </span>{' '}
+                                covered
                             </li>
                             <li className="flex items-center">
                                 <CheckIcon className="text-white text-xs bg-green-500 rounded-full mr-2 p-1" />
                                 All inclusive (no hidden cost)
-                            </li>
-                            <li className="flex items-center">
-                                <CheckIcon className="text-white text-xs bg-green-500 rounded-full mr-2 p-1" />
-                                Street Smart Certification
                             </li>
                         </ul>
                     </div>
@@ -109,49 +138,6 @@ export function PricingCards() {
                         <Button className="w-full bg-gradient-to-r from-orange-500 to-red-500">
                             Get Started
                         </Button>
-                    </div>
-                </div>
-
-                <div className="flex flex-col p-6 bg-white shadow-lg rounded-lg dark:bg-zinc-850 justify-between border border-gray-300">
-                    <div>
-                        <h3 className="text-2xl font-bold text-center">
-                            Clear Cut
-                        </h3>
-                        <div className="mt-4 text-center text-zinc-600 dark:text-zinc-400">
-                            <span className="text-4xl font-bold">$360</span>
-                        </div>
-                        <div className="mt-4 text-center text-zinc-600 dark:text-zinc-400">
-                            <span>
-                                400 Minutes Bundle{' '}
-                                <span className="max-sm:whitespace-nowrap">
-                                    (4 x 100 Minutes Session)
-                                </span>
-                            </span>
-                        </div>
-                        <div className="ml-2 mt-4 text-xl font-bold text-start">
-                            <span>What’s Covered</span>
-                        </div>
-                        <ul className="mt-4 space-y-2">
-                            <li className="flex items-center">
-                                <CheckIcon className="text-white text-xs bg-green-500 rounded-full mr-2 p-1" />
-                                Car setup & control
-                            </li>
-                            <li className="flex items-center">
-                                <CheckIcon className="text-white text-xs bg-green-500 rounded-full mr-2 p-1" />
-                                4 topics of your choice
-                            </li>
-                            <li className="flex items-center">
-                                <CheckIcon className="text-white text-xs bg-green-500 rounded-full mr-2 p-1" />
-                                All inclusive (no hidden cost)
-                            </li>
-                            <li className="flex items-center">
-                                <CheckIcon className="text-white text-xs bg-green-500 rounded-full mr-2 p-1" />
-                                Street Smart Certification
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="mt-6">
-                        <Button className="w-full">Get Started</Button>
                     </div>
                 </div>
             </div>

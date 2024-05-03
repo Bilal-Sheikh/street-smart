@@ -6,7 +6,6 @@ import Navbar from '@/components/Navbar';
 import Pricing from '@/components/Pricing';
 import RefresherProgram from '@/components/RefresherProgram';
 import Topics from '@/components/Topics';
-import Image from 'next/image';
 
 export default function Home() {
     return (

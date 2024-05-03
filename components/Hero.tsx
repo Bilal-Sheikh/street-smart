@@ -5,7 +5,7 @@ import heroImage from '@/public/hero-image.png';
 export default function Hero() {
     return (
         <section>
-            <div className="pt-10 px-5 lg:pt-5 lg:px-20 lg:mx-auto lg:max-w-screen-2xl lg:flex justify-between">
+            <div className="pt-10 px-5 lg:pt-5 lg:pl-20 lg:mx-auto lg:max-w-screen-2xl lg:flex justify-between items-center">
                 <div className="block lg:hidden">
                     <Image
                         src={heroImage}
@@ -15,14 +15,15 @@ export default function Hero() {
                         alt="Be Street Smart, Stay Safe"
                     />
                 </div>
+
                 <div className="pt-10 px-4 lg:pt-5 lg:w-2/3">
-                    <h3 className="text-gray-600 text-2xl lg:text-4xl font-medium">
+                    <h3 className="text-gray-600 text-2xl lg:text-3xl font-medium">
                         Drive with Confidence, Safe and Easy
                     </h3>
                     <h1 className="text-gray-600 text-3xl lg:text-5xl py-7 font-bold">
                         Be Street Smart, Stay Safe
                     </h1>
-                    <p className="text-sm lg:text-xl font-medium">
+                    <p className="text-base lg:text-xl font-medium">
                         Boost your driving confidence. Get driving refresher
                         courses that fit your needs. Learn defensive skills in
                         real-life situations and feel safer on the road.
@@ -47,14 +48,14 @@ export default function Hero() {
             </div>
 
             <div className="bg-orange-600 text-white">
-                <div className="py-10 px-10 lg:px-20 lg:mt-12 lg:mx-auto lg:max-w-screen-2xl">
-                    <h3 className="text-2xl lg:text-4xl font-medium">
+                <div className="py-10 px-10 lg:py-20 lg:px-20 lg:mt-12 lg:mx-auto lg:max-w-screen-2xl">
+                    <h3 className="text-2xl lg:text-3xl font-medium">
                         Feeling Anxious Behind the Wheel?
                     </h3>
-                    <h1 className="py-6 text-2xl lg:text-4xl font-bold">
+                    <h1 className="py-6 text-2xl lg:text-3xl font-bold">
                         No worries, it gets easier after the first try or two!
                     </h1>
-                    <p className="text-sm font-light lg:font-medium lg:text-xl">
+                    <p className="text-base font-light lg:font-medium lg:text-lg">
                         It's normal to have jitters, especially after just
                         passing your driving test or a long break. Singapore
                         roads can be busy, and protecting your car (and wallet)
@@ -62,7 +63,7 @@ export default function Hero() {
                         yourself and your family just to avoid a refresher
                         course?
                     </p>
-                    <p className="py-8 text-sm font-light lg:text-xl lg:font-medium">
+                    <p className="py-8 text-base font-light lg:text-lg lg:font-medium">
                         Street Smart's Driving Refresher Program is here to get
                         you cruising confidently again. With practice and guided
                         instructions, you'll be back to enjoying the freedom of

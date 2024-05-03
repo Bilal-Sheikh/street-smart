@@ -43,7 +43,9 @@ const contactSchema = z.object({
         'Clear Cut ($360)',
     ]),
     licence: z.enum(['Yes', 'No']),
-    note: z.string().optional(),
+    note: z.string().min(10, {
+        message: 'Note must be at least 10 characters.',
+    }),
 });
 
 export default function Contact() {
@@ -65,7 +67,7 @@ export default function Contact() {
     return (
         <section id="contact">
             <div className="px-10 py-12 lg:px-20 lg:mx-auto lg:max-w-screen-2xl">
-                <h1 className="py-5 lg:pb-10 text-2xl lg:text-4xl font-medium text-gray-600">
+                <h1 className="py-5 lg:pb-10 text-2xl lg:text-3xl font-medium text-gray-600">
                     Contact Us
                 </h1>
 
@@ -84,13 +86,10 @@ export default function Contact() {
                                 render={({ field }) => (
                                     <FormItem>
                                         <FormLabel className="text-lg">
-                                            Firstname
+                                            First Name *
                                         </FormLabel>
                                         <FormControl>
-                                            <Input
-                                                placeholder="John"
-                                                {...field}
-                                            />
+                                            <Input {...field} />
                                         </FormControl>
                                         <FormMessage />
                                     </FormItem>
@@ -102,13 +101,10 @@ export default function Contact() {
                                 render={({ field }) => (
                                     <FormItem>
                                         <FormLabel className="text-lg">
-                                            Lastname
+                                            Last Name *
                                         </FormLabel>
                                         <FormControl>
-                                            <Input
-                                                placeholder="Doe"
-                                                {...field}
-                                            />
+                                            <Input {...field} />
                                         </FormControl>
                                         <FormMessage />
                                     </FormItem>
@@ -120,13 +116,10 @@ export default function Contact() {
                                 render={({ field }) => (
                                     <FormItem>
                                         <FormLabel className="text-lg">
-                                            Mobile Number
+                                            Mobile Number *
                                         </FormLabel>
                                         <FormControl>
-                                            <Input
-                                                placeholder="+00 987 654 321"
-                                                {...field}
-                                            />
+                                            <Input {...field} />
                                         </FormControl>
                                         <FormMessage />
                                     </FormItem>
@@ -138,13 +131,10 @@ export default function Contact() {
                                 render={({ field }) => (
                                     <FormItem>
                                         <FormLabel className="text-lg">
-                                            Email Address
+                                            Email Address *
                                         </FormLabel>
                                         <FormControl>
-                                            <Input
-                                                placeholder="john_doe@example.com"
-                                                {...field}
-                                            />
+                                            <Input {...field} />
                                         </FormControl>
                                         <FormMessage />
                                     </FormItem>
@@ -157,7 +147,7 @@ export default function Contact() {
                                     <FormItem>
                                         <FormLabel className="text-lg">
                                             I would like to sign up for the
-                                            following Plan
+                                            following Plan *
                                         </FormLabel>
                                         <FormControl>
                                             <Select
@@ -167,14 +157,14 @@ export default function Contact() {
                                                     <SelectValue placeholder="Select a Plan" />
                                                 </SelectTrigger>
                                                 <SelectContent>
-                                                    <SelectItem value="Try Out ($200)">
-                                                        Try Out ($200)
-                                                    </SelectItem>
                                                     <SelectItem value="Value For Money ($480)">
                                                         Value For Money ($480)
                                                     </SelectItem>
                                                     <SelectItem value="Clear Cut ($360)">
                                                         Clear Cut ($360)
+                                                    </SelectItem>
+                                                    <SelectItem value="Try Out ($200)">
+                                                        Try Out ($200)
                                                     </SelectItem>
                                                 </SelectContent>
                                             </Select>
@@ -189,7 +179,7 @@ export default function Contact() {
                                 render={({ field }) => (
                                     <FormItem>
                                         <FormLabel className="text-lg">
-                                            I have a valid driving licence
+                                            I have a valid driving licence *
                                         </FormLabel>
                                         <FormControl>
                                             <Select
@@ -221,7 +211,7 @@ export default function Contact() {
                                 <FormItem>
                                     <FormLabel className="text-lg">
                                         Any particular areas you want to focus
-                                        on
+                                        on *
                                     </FormLabel>
                                     <FormControl>
                                         <Textarea
